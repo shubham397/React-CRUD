@@ -3,13 +3,13 @@ import { Route } from "react-router-dom";
 // import AttendanceReport from "./attendance-report/AttendanceReportContainer";
 import Country from "./country/countryContainer";
 
-import CRUD from "./country/countryContainer";
+import CRUD from "./CRUD/crudContainer";
 
 import Text from "./textBox/textBoxContainer";
 
 const DashboardRoutes = () => {
 
-let mainDivStyle = {
+const mainDivStyle = {
   marginLeft:"27%"
 }
 
