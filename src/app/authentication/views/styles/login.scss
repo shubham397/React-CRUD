@@ -1,0 +1,59 @@
+@import "../../../themes/colors";
+
+// FIXME: Style not optimized
+.nos-ds__authentication {
+    &__login {
+        &-root {
+            display: flex;
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            flex-direction: column;
+            background: #fdffb5;
+            font-size: 1.25rem;
+            font-weight: 550;
+            align-items: center;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+
+        &-field {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        &-input {
+            display: flex;
+            width: 20rem;
+            outline: none;
+            border: 1px solid purple;
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+            border-radius: 0.3rem;
+            height: 3rem;
+            padding: 0 0.3rem;
+        }
+
+        &-button {
+            display: flex;
+            margin-top: 2rem;
+            justify-content: center;
+            height: 3rem;
+            border-radius: 0.3rem;
+            border: none;
+            background: #af4eaf;
+            color: black;
+            outline: none;
+            cursor: pointer;
+            font-size: 1.25rem;
+            width: 100%;
+
+            &:hover {
+                background: #853985;
+                color: white;
+            }
+        }
+    }
+}

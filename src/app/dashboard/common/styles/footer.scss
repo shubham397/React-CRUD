@@ -1,0 +1,29 @@
+@import "../../../themes/_colors";
+
+.nos-ds__footer {
+    &-container {
+        &-root {
+            width: 100%;
+            display: flex;
+            padding: 0 2rem;
+            align-items: flex-end;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        &-logo {
+            display: flex;
+        }
+    }
+
+    &-copyright {
+        font-size: 1rem;
+        color: $copyright;
+    }
+
+    &-logo {
+        width: 9rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+}

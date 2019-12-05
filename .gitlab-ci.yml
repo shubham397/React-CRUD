@@ -1,0 +1,40 @@
+image: node:latest
+
+stages:
+    - build
+    - test
+    - deploy
+
+cache:
+    paths:
+    - node_modules/
+
+build:
+    stage: build
+    script:
+        - yarn install
+        - yarn run build
+    artifacts:
+        paths:
+            - node_modules/
+            - dist/
+
+deploy_staging:
+    stage: deploy
+    only:
+        - /^staging\/release-.*$/
+
+    script:
+        - yarn global add firebase-tools
+        - firebase use react-boiler-plate-demo --token $FIREBASE_TOKEN
+        - firebase deploy --only hosting:react-staging -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+
+deploy_production:
+    stage: deploy
+    only:
+        - master
+
+    script:
+        - yarn global add firebase-tools
+        - firebase use react-boiler-plate-demo --token $FIREBASE_TOKEN
+        - firebase deploy --only hosting:react-boiler-plate-demo -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN

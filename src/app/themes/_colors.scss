@@ -1,0 +1,30 @@
+// COLORS
+$red: red;
+$black: #000000;
+$white: #ffffff;
+$blue-shade-1: #b4ecea;
+$blue-shade-2: rgb(54, 199, 209);
+$grey-shade-1: #d0d0d0;
+$grey-shade-2: #e2e2e2;
+$grey-shade-3: #c0bfbf;
+$grey-shade-4: #828181;
+$purple-shade-1: #6c218a;
+
+// BACKGROUNDS
+$primary-background: $white;
+$header-backgournd: $white;
+$secondary-background: $grey-shade-2;
+$button-primary-background: $blue-shade-1;
+$button-primary-hover: $blue-shade-2;
+$button-secondary-background: $grey-shade-2;
+$button-secondary-hover: $grey-shade-3;
+
+// FONTS
+$logo-color: $purple-shade-1;
+$copyright: $grey-shade-4;
+
+// SHADOW COLOR
+$shadow-color-1: $grey-shade-1;
+
+// SHADOW
+$header-box-shadow: 0 5px 6px -3px $grey-shade-1;

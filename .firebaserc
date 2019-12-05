@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "react-boiler-plate-demo"
+  },
+  "targets": {
+    "react-boiler-plate-demo": {
+      "hosting": {
+        "react-staging": [
+          "react-staging"
+        ],
+        "react-boiler-plate-demo": [
+          "react-boiler-plate-demo"
+        ]
+      }
+    }
+  }
+}

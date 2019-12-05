@@ -1,0 +1,22 @@
+@import "../../themes/_colors";
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: $secondary-background;
+}
+
+.nos-ds__dashboard {
+    &-root {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-content {
+        min-height: 80vh;
+        display: flex;
+        width: 100%;
+    }
+}
