@@ -3,10 +3,6 @@ import './table.css';
 
 const TextBox = (props) => {
 
-    // console.log(props.data);
-
-    
-
     function deleteRow(e,index){
         props.delete(index);
     }
@@ -48,9 +44,11 @@ const TextBox = (props) => {
         if(props.data.length === 0 ){}
         else{
             const key = Object.keys(props.data[0]);
-    return key.map((value,index) => {
+    const form = key.map((value,index) => {
         return <th key={index}> {value} </th>
       })
+      form[4] = <th>Action</th>
+      return form
         }
         
 }
@@ -60,8 +58,7 @@ const TextBox = (props) => {
         <table>
           <thead>
             <tr>
-              {createHead()}            
-              <th>Action</th>
+              {createHead()}
             </tr>
           </thead>
           <tbody>
