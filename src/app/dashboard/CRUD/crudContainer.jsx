@@ -22,18 +22,9 @@ function crudContainer() {
         const email = form.elements[1].value;
         const dob = form.elements[2].value;
         if(tableRowId == null){    
-            // if(formData[0].name == null){
-            //     formData[0].name = name;
-            //     formData[0].email = email;
-            //     formData[0].dob = dob;
-            //     const values = [...formData];
-            //     setFormData(values);
-            // }
-            // else{
-                const values = [...formData];
-                values.push({name:name, email:email, dob:dob})
-                setFormData(values);
-            // }
+            const values = [...formData];
+            values.push({name:name, email:email, dob:dob})
+            setFormData(values);
         }
         else{
             formData[tableRowId].name = name;
